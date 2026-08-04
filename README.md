@@ -17,6 +17,17 @@ The project uses QLoRA (4-bit quantization + LoRA adapters) to efficiently fine-
 - Training Samples: 680
 - Evaluation Samples: 120
 
+## Architecture
+Dataset
+   ↓
+Phi-2 Base Model
+   ↓
+QLoRA + LoRA Fine-tuning
+   ↓
+Evaluation Harness
+   ↓
+Hugging Face Deployment
+
 ## Pipeline
 
 1. Generate and prepare instruction dataset
